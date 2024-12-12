@@ -5,7 +5,7 @@ function getClock(){
     const date = new Date();
 
     const year = date.getFullYear();
-    const month = date.getMonth();
+    const month = date.getMonth()+1;
     const dateMonth = date.getDate();
     // const day = date.getDay();
     day.innerText = `${year}.${month}.${dateMonth}`;
