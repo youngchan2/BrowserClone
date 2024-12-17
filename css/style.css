@@ -1,3 +1,72 @@
 .hidden{
     display: none;
 }
+
+/* 배경 이미지를 스타일링할 img 태그 */
+body > img {
+    position: fixed; /* 스크롤 시에도 고정된 배경으로 유지 */
+    top: 0;
+    left: 0;
+    width: 100%; /* 화면 너비에 맞게 설정 */
+    height: 100%; /* 화면 높이에 맞게 설정 */
+    object-fit: cover; /* 이미지 비율을 유지하며 화면에 꽉 채움 */
+    z-index: -1; /* 이미지가 다른 요소 아래로 배치되도록 설정 */
+}
+
+#date{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
+
+#clock{
+    color: white;
+    text-align: center;
+    font-size: 80px;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#login-form input{
+    border: none;
+    outline: none;
+    margin: 0px 30px;
+    width: 40%;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    /* padding-bottom: 30px; */
+    margin-bottom: 25px;    /* log in 버튼과 간격 추가 */
+    padding: 25px 0px;
+}
+
+#login-form input::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
+}
+
+#login-form input:focus{
+    border-color: red;
+}
+
+#login-form input:focus::placeholder{
+    color: red;
+}
+
+#login-form button{
+    border: none;
+    width: 120px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
