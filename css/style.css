@@ -1,5 +1,10 @@
+@import "login.css";
+@import "weather.css";
+@import "search.css";
+@import "schedule.css";
+
 .hidden{
-    display: none;
+    display: none !important;
 }
 
 /* 배경 이미지를 스타일링할 img 태그 */
@@ -16,57 +21,13 @@ body > img {
 #date{
     color: white;
     text-align: center;
-    font-size: 80px;
+    font-size: 50px;
+    margin: 0;
 }
 
 #clock{
     color: white;
     text-align: center;
     font-size: 80px;
-}
-
-#login-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-
-#login-form input{
-    border: none;
-    outline: none;
-    margin: 0px 30px;
-    width: 40%;
-    font-size: 30px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
-    /* padding-bottom: 30px; */
-    margin-bottom: 25px;    /* log in 버튼과 간격 추가 */
-    padding: 25px 0px;
-}
-
-#login-form input::placeholder{
-    color: rgba(255, 255, 255, 0.8);
-    text-align: center;
-    font-size: 30px;
-}
-
-#login-form input:focus{
-    border-color: red;
-}
-
-#login-form input:focus::placeholder{
-    color: red;
-}
-
-#login-form button{
-    border: none;
-    width: 120px;
-    height: 35px;
-    background-color: rgba(0, 0, 0, 0);
-    color: white;
-    font-size: 20px;
-    border-radius: 10px;
-    margin: 0 auto;
+    margin: 0;
 }

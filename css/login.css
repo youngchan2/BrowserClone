@@ -1,0 +1,70 @@
+#login-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+#login-form input{
+    border: none;
+    outline: none;
+    margin: auto;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    width: 40%;
+    font-size: 30px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: 2px solid black;
+    /* padding-bottom: 30px; */
+    margin-bottom: 25px;    /* log in 버튼과 간격 추가 */
+    padding: 25px 0px;
+}
+
+#login-form input::placeholder{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+}
+
+#login-form input:focus{
+    border-color: red;
+}
+
+#login-form input:focus::placeholder{
+    color: red;
+}
+
+#login-form button{
+    border: none;
+    width: 120px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#greeting{
+    text-align: center;
+    color: yellow;
+    font-size: 100px;
+}
+
+#greeting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logout-button{
+    border: none;
+    width: 100px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 1);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}

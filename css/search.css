@@ -1,0 +1,70 @@
+#search {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+#search div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+label input{
+    display: none;
+}
+
+label i{
+    font-size: 24px;
+    transition: transform 0.3s ease;
+}
+
+label input:checked + i{
+    transform: scale(1.2);
+}
+label input[value="youtube"]:checked + i{
+    color: #FF0000;
+}
+label input[value="google"]:checked + i{
+    color: #4285F4;
+}
+label input[value="naver"]:checked + i{
+    color: #1EC800;
+}
+
+#search input[type="text"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+}
+/* #search input[type="text"]:focus{
+    border-color: #0078D4;
+} */
+#search button{
+    /* background-color: #FF0000; */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+#search button:hover{
+    opacity: 0.8;
+}

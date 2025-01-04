@@ -7,6 +7,7 @@ const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
+const LOGOUT_BUTTON = "logout-button"
 
 function onLoginSubmit(event){
     event.preventDefault();
@@ -18,9 +19,27 @@ function onLoginSubmit(event){
     printGreetings(username);
 }
 
+function onLogOut(){
+    localStorage.removeItem(USERNAME_KEY);
+    greeting.classList.add(HIDDEN_CLASSNAME);
+    loginForm.classList.remove(HIDDEN_CLASSNAME);
+    loginForm.reset();
+}
+
+function addLogOutButton(){
+    const logOutButton = document.createElement("button");
+    logOutButton.id = LOGOUT_BUTTON;
+    logOutButton.innerText = "Log Out";
+    logOutButton.addEventListener("click",onLogOut);
+
+    greeting.appendChild(logOutButton);
+}
+
 function printGreetings(username){
     greeting.innerText = `Hello ${username}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
+
+    addLogOutButton();
 }
 
 const saveUsername = localStorage.getItem(USERNAME_KEY);

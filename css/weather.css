@@ -1,0 +1,11 @@
+#weather{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    color: white;
+}
+#weather span{
+    display: block;
+    margin-bottom: 5px;
+}

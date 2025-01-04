@@ -5,9 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="css/style.css" />
-        <title>Practice1</title>
+        <title>Custom Browser</title>
+        <style>
+            body {
+                background-color: #f0f0f0;
+                color: #333;
+                padding: 20px;
+            }
+
+            table{
+                width: 100%;
+                border-collapse: collapse;
+                margin-top: 20px;
+            }
+            table, th, td{
+                border: 1px solid #ccc;
+            }
+            th, td{
+                padding: 10px;
+                text-align: center;
+            }
+            th{
+                background-color: #f4f4f4;
+            }
+        </style>
     </head>
-    <body>
         <h2 id="date"></h2>
         <h2 id="clock"></h2>
         <form class="hidden" id="login-form">
@@ -17,7 +39,7 @@
                 type = "text"
                 placeholder="What is your name?"
             />
-            <button>Log In</button>
+            <!-- <button>Log In</button> -->
         </form>
         <h1 class="hidden" id="greeting"></h1>
         <form id="todo-form">
@@ -32,33 +54,38 @@
             <span></span>
             <span></span>
         </div>
-        <h2>해외축구 일정 클릭↓↓↓</h2>
-        <button id="schedule">일정</button>
+        <div id = "schedule">
+            <h2>해외축구 일정</h2>
+            <button id="schedule">
+                <i class="fa-solid fa-futbol"></i>
+        </div>
+        </button>
         <form id="search">
             <div>
                 <label>
                     <input type="radio" name="engine" value="youtube" checked />
-                    Youtube
+                    <i class="fa-brands fa-youtube"></i>
                 </label>
                 <label>
                     <input type="radio" name="engine" value="google"/>
-                    Google
+                    <i class="fa-brands fa-google"></i>
                 </label>
                 <label>
                     <input type="radio" name="engine" value="naver"/>
-                    Naver
+                    <i class="fa-solid fa-n"></i>
                 </label>
             </div>
             <input type="text" placeholder="search" required/>
             <button>Search</button>
         </form>
         <!-- <a href="https://naver.com">Naver</a> -->
+        <script src="https://kit.fontawesome.com/96c9cc01be.js" crossorigin="anonymous"></script>
         <script src = "js/greeting.js"></script>
         <script src = "js/clock.js"></script>
         <script src = "js/quotes.js"></script>
         <script src = "js/background.js"></script>
         <script src = "js/todo.js"></script>
-        <!-- <script src = "js/weather.js"></script> -->
+        <script src = "js/weather.js"></script>
         <script src = "js/search.js"></script>
     </body>
 </html>
